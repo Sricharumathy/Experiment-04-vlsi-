@@ -118,7 +118,38 @@ endmodule
 
 ## Output
 
-![image](https://github.com/Sricharumathy/Experiment-04-vlsi-/assets/159044760/a0c8563b-7cae-470f-b7fe-75a926617f4f)
+![image](https://github.com/Sricharumathy/Experiment-04-vlsi-/assets/159044760/a0c8563b-7cae-470f-b7fe-75a926617f4f) 
+
+## Counter:
+![image](https://github.com/Sricharumathy/Experiment-04-vlsi-/assets/159044760/eb89f242-ed29-4587-a0e3-963c24528fb2)
+
+## Program
+```
+module Counter(clk,rst,mode,y);
+input mode,clk,rst;
+output reg [3:0]y;
+always@(posedge clk)
+begin
+if(rst==1)
+y=8'b0;
+else
+begin
+if(mode==1)
+y=y+1'b1;
+else
+y=y-1'b1;
+end
+end
+endmodule
+```
+## Output
+<img width="785" alt="image" src="https://github.com/Sricharumathy/Experiment-04-vlsi-/assets/159044760/cbbdfa16-c9cb-4158-8354-200c5d980aad">
+
+
+## Result
+Thus, The FlipFlops and Counter are simulated and verified Successfully.
+
+
 
 
 
